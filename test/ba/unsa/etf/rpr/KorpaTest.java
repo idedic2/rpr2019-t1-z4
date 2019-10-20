@@ -8,11 +8,14 @@ class KorpaTest {
 
     @Test
     void dodajArtikl() {
-
+         Korpa k=new Korpa();
+         k.dodajArtikl((new Artikl("ulje", 5, "2")));
+         assertEquals(1, k.getVelicina());
     }
 
     @Test
     void getArtikli() {
+
     }
 
     @Test

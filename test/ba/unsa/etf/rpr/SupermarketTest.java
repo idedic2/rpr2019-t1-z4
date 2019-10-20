@@ -6,12 +6,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SupermarketTest {
 
-    @Test
-    void dodajArtikl() {
-    }
 
     @Test
     void testDodajArtikl() {
+        Supermarket s=new Supermarket();
+        s.dodajArtikl(new Artikl("Biciklo", 1000, "1"));
+        assertEquals( 1, s.getVelicina());
+
     }
 
     @Test
@@ -22,8 +23,5 @@ class SupermarketTest {
     void izbaciArtiklSaKodom() {
     }
 
-    //Supermarket s=new Supermarket();
-     //s.dodajArtikl(new Artikl("Biciklo", 1000, "1"));
-     //assertEquals( 1, s.getVelicina());
 
 }

@@ -10,7 +10,11 @@ public Korpa(){
     artikli=new Artikl[kapacitet];
 }
 
-public Boolean dodajArtikl(Artikl a){
+    public int getVelicina() {
+        return velicina;
+    }
+
+    public Boolean dodajArtikl(Artikl a){
   if(velicina>=kapacitet)return false;
   artikli[velicina++]=a;
   return true;
