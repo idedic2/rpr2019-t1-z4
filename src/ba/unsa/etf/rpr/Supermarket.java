@@ -6,6 +6,11 @@ public class Supermarket {
     private int velicina;
     private int kapacitet=1000;
     private Artikl[] art=new Artikl[kapacitet];
+
+    public int getVelicina() {
+        return velicina;
+    }
+
     public Supermarket(){
         velicina=0;
         art=new Artikl[kapacitet];
